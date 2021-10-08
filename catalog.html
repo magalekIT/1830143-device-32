@@ -3,44 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-      <header class="page-header">
-        <form class="search-page" action="https://echo.htmlacademy.ru/" method="get">
-          <button type="submit">Поиск</button>
-          <input class="search" type="search" placeholder="Поиск по сайту" name="search"">
-        </form>
-        <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-                <img class="navigation-logo-image" src="" alt="Логотип Магазина «Девайс»">
-            </a>
-          <ul class="navigation-users">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
-          <ul class="navigation-main">
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="guarantee.html">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="page-header">
+      <a class="page-logo-link" href="#">
+        <img class="logo" src="" alt="Логотип Магазина «Девайс»">
+      </a>
+      
+      <form class="search-page" action="https://echo.htmlacademy.ru/" method="get">
+        <button type="submit">Поиск</button>
+        <input class="search" type="search" placeholder="Поиск по сайту" name="search">
+      </form>
+      
+      <nav class="navigation">
+        <ul class="navigation-users">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Войти</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
       <main class="main-inner">
         <header class="inner-header">
@@ -57,6 +60,7 @@
                 </li>
             </ul>
         </header>
+
         <section class="catalog-products">
             <h2 class="catalog-products-title">Фильтр:</h2>
             <form class="catalog-products-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -137,6 +141,7 @@
                 </fieldset>
                 <button class="filter-button" type="submit">Показать</button>
             </form>
+
             <form class="sorting-type">
                 <label class="sorting-type-label" for="sorting">Сортировка</label>
                     <select class="select-control" id="sorting" name="sorting">
@@ -146,6 +151,7 @@
                     </select>
                     <button class="vissualy-hidden" type="submit">Отсортировать продукты</button>
             </form>
+
             <a href="#" class="button button-up">
                 <span class="vissualy-hidden">Вверх списка</span>
             </a>
@@ -219,6 +225,7 @@
                     </li>
                 </ul>
             </div>
+            
         </section>
       </main>
 
@@ -228,9 +235,10 @@
           <img class="footer-adress-logo" src="" alt="Логотип Магазина Девайс">
           <address class="footer-adress-text">
             <p class="about-text">Санкт-Петербург,набережная
-              <br>реки Карповки, 5, литера П.</p>
+              реки Карповки, 5, литера П.</p>
           </address>
         </section>
+  
         <section class="footer-navigation">
           <h2 class="footer-navigation-title">Услуги и социальные сети</h2>
           <nav class="footer-navigation-service">
@@ -264,15 +272,17 @@
             </li>
           </ul>
         </section>
+  
         <section class="footer-card">
           <h2 class="visually-hidden">Номер телефона</h2>
           <address class="footer-phone-address">
             <a class="footer-phone-address-number" href="tel.:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
-          Сделано в<a class="button" href="https://htmlacademy.ru/">.html academy
-          <img class="academy-logo" src="" alt="логототип Академии">
+          <a class="button" href="https://htmlacademy.ru/">
+            <img class="academy-logo" src="" alt="логототип Академии">
           </a>
         </section>
+        
       </footer>
   </body>
 </html>
