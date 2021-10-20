@@ -28,8 +28,312 @@
     src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
-/*
 body {
-    font-family: raleway;
+    font-family: rubik, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #FFFFFF;
 }
-*/
+.button {
+    font-family: raleway, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #000000;
+    background-color: #FFE17F;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page-header {
+    color: #000000;
+    background-color: #FFE17F;
+}
+.search {
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.3;
+    background-color: #FFE17F;
+}
+.navigation-users-link {
+    line-height: 19px;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+}
+.navigation-list-link {
+    font-family: raleway, sans-serif;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-index {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.slider-subtitle {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+.slider-discription {
+    color: #444444;
+}
+.slider-parameters-terms {
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
+}
+.slider-parameters-discription {
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+}
+.product-link {
+    font-family: raleway, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+.product-image {
+    background-color: #FFE17F;
+}
+.service {
+    background-color: #F0F0F0;
+}
+.service-title {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.servive-discription {
+    color: #444444;
+}
+.delivery {
+    background-color: #F0F0F0;
+}
+.button-delivery-current {
+    color: #FFE17F;
+    background-color: #000000;
+}
+.delivery-title {
+    font-family: raleway, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.about-title {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.about-discription {
+    color: #444444;
+}
+.about-delivery-item {
+    font-weight: 700;
+    line-height: 20px;
+    color: #000000;
+}
+.contacts {
+    line-height: 30px;
+    color: #444444;
+}
+.contacts-title {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.contacts-discription {
+    color: inherit;
+}
+.contacts-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: inherit;
+}
+.contacts-subtitle-text {
+    font-style: normal;
+    color: inherit;
+}
+.contacts-subtitle-number {
+    font-style: normal;
+    color: inherit;
+    text-decoration-line: underline;
+}
+.newsletter {
+    color: #444444;
+}
+.newsletter-email {
+    line-height: 30px;
+    color: #444444;
+    opacity: 0.5;
+    background-color: #F0F0F0;
+}
+.newsletter-title {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.newsletter-button {
+    background-color: inherit;
+}
+.page-footer {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #444444;
+}
+.footer-adress-text {
+    font-style: normal;
+    line-height: 19px;
+}
+.footer-service-link {
+    font-family: raleway, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-phone-address-number {
+    font-style: normal;
+    line-height: 30px;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.visually-hidden {
+    visibility: hidden;
+}
+.social-button {
+    background-color: #ffffff;
+}
+.main-inner {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.inner-header-title {
+    font-family: raleway, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+.breadcrumps-link {
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+}
+.catalog-products-title {
+    font-family: raleway, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #DCDCDC;
+}
+.catalog-products-filter {
+    background-color: #EBEBEB;
+}
+.catalog-filter-title {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+.catalog-filter-label {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    opacity: 0.3;
+}
+.sorting-type {
+    background-color: #EBEBEB;
+}
+.catalog-filter-item {
+    font-size: 16px;
+    line-height: 19px;
+}
+.sorting-type-label {
+    font-family: raleway, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.select-control {
+    font-size: 16px;
+    line-height: 19px;
+}
+.button-up {
+    background-color: inherit;
+}
+.button-down {
+    background-color: inherit;
+}
+.product-card-link {
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: #000000;
+}
+.product-card-text {
+    line-height: 21px;
+    text-align: right;
+    color: #444444;
+}
+.load-more {
+    font-family: raleway, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+}
+.pagination-link {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #444444;
+    opacity: 0.3;
+    text-decoration: none;
+}
+.pagination-prev {
+    font-family: raleway, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+}
+.pagination-next {
+    font-family: raleway, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+}
