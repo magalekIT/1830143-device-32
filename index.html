@@ -47,6 +47,7 @@
     </header>
 
     <main class="main-index">
+      <div class="page-container">
         <section class="slider">
           <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Фото квадрокоптера">
           <div class="slider-1">
@@ -122,8 +123,8 @@
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-2.svg" width="86" height="117" alt="Монопод для селфи">Моноподы 
-                для селфи</a>
+                <img class="product-image" src="images/product/popular-2.svg" width="86" height="117" alt="Монопод для селфи">
+              Моноподы для селфи</a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
@@ -143,10 +144,10 @@
             </li>
           </ul>
         </section>
-        
-        <section class="service">
-          <h2 class="visually-hidden">Услуги</h2>
-          <div class="slider-service">
+      </div>
+      <section class="service">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="slider-service">
             <ul class="slider-service-list">
               <li class="slider-service-item">
                 <button class="button button-delivery-current" type="button">Доставка</button>
@@ -179,9 +180,9 @@
                 <img class="service-image" src="images/service/credit.svg" width="149" height="180" alt="Кредит">
               </div>
             </div>
-          </div>
-        </section>
-        
+        </div>
+      </section>
+      <div class="page-container">  
         <section class="delivery">
           <h2 class="visually-hidden">Доставка</h2>
           <h3 class="delivery-title">Доставим редкий товар под заказ</h3> 
@@ -219,23 +220,25 @@
           </section>
         
         </div>
-
-        <section class="newsletter">
+      </div>
+      <section class="newsletter">
+        <div class="newsletter-container">
           <h2 class="newsletter-title">Подпишитесь
             на рассылку</h2>
           <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            </p>
-            <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
-            </button>
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              </p>
+              <button class="button newsletter-button" type="submit">
+                <span>Подписаться</span>
+              </button>
+              <p class="newsletter-text newsletter-free">Это бесплатно</p>
           </form>
-          <p class="newsletter-text newsletter-free">Это бесплатно</p>
-        </section>
+        </div>
+      </section> 
     </main>
 
     <footer class="page-footer">
