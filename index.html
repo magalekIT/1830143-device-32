@@ -46,21 +46,26 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <div class="page-container">
         <section class="slider">
-          <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Фото квадрокоптера">
-          <div class="slider-1">
-            <h3 class="slider-subtitle">Порхает как бабочка,
-              жалит как пчела!</h3>
-            <p class="slider-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button button-more" href="#">Подробнее</a>
-            <dl class="slider-parameters">
-              <dt class="slider-parameters-terms">Дальность полета</dt>
-              <dd class="slider-parameters-discription">800 м</dd>
-              <dt class="slider-parameters-terms">Радиус поражения</dt>
-              <dd class="slider-parameters-discription">50 м</dd>
-            </dl>
+          <div class="slider-quadcopter">
+            <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Фото квадрокоптера">
+            <div class="quadcopter-containet">
+              <h3 class="slider-subtitle">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="slider-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="button button-more" href="#">Подробнее</a>
+              <dl class="slider-parameters">
+                <span>
+                  <dd class="slider-parameters-discription">800 м</dd>
+                  <dt class="slider-parameters-terms">Дальность полета</dt>
+                </span>
+                <span>
+                  <dd class="slider-parameters-discription">50 м</dd>
+                  <dt class="slider-parameters-terms">Радиус поражения</dt>
+                </span>
+              </dl>
+            </div>
           </div>
           <div class="slider-display-none">
             <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фото фитнес-браслета">
@@ -118,29 +123,46 @@
           <ul class="product-list">
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-1.svg" width="97" height="55" alt="Очки виртуальной реальности">Виртуальная
-                реальность</a>
+                <span class="product-bg">
+                  <img class="product-image" src="images/product/popular-1.svg" width="97" height="55" alt="Очки виртуальной реальности">
+                </span>Виртуальная
+                реальность
+              </a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-2.svg" width="86" height="117" alt="Монопод для селфи">
-              Моноподы для селфи</a>
+                <span class="product-bg">    
+                  <img class="product-image" src="images/product/popular-2.svg" width="86" height="117" alt="Монопод для селфи">
+                </span>Моноподы для селфи
+              </a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-3.svg" width="71" height="87" alt="Экшн-камера">Экшн-камеры</a>
+                <span class="product-bg">
+                  <img class="product-image" src="images/product/popular-3.svg" width="71" height="87" alt="Экшн-камера">
+                </span> Экшн-камеры
+              </a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-4.svg" width="107" height="65" alt="Фитнес-браслет">Фитнес-браслеты</a>
+                <span class="product-bg">
+                  <img class="product-image" src="images/product/popular-4.svg" width="107" height="65" alt="Фитнес-браслет">
+                </span>Фитнес-браслеты
+              </a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-5.svg" width="56" height="98" alt="Умные часы">Умные часы</a>
+                <span class="product-bg">
+                  <img class="product-image" src="images/product/popular-5.svg" width="56" height="98" alt="Умные часы">
+                </span>Умные часы
+              </a>
             </li>
             <li class="product-item">
               <a class="product-link" href="#">
-                <img class="product-image" src="images/product/popular-6.svg" width="132" height="69" alt="Квадрокоптер">Квадрокоптеры</a>
+                <span class="product-bg">
+                  <img class="product-image" src="images/product/popular-6.svg" width="132" height="69" alt="Квадрокоптер">
+                </span>Квадрокоптеры
+              </a>
             </li>
           </ul>
         </section>
@@ -199,7 +221,7 @@
               <li class="about-delivery-item">СДИК</li>
               <li class="about-delivery-item">ТоксБерри</li>
             </ul>
-            <a class="button button-more" href="#">Подробнее о нас</a>
+            <a class="button button-about" href="#">Подробнее о нас</a>
           </section>
           
           <section class="contacts">
