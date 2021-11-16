@@ -202,24 +202,19 @@ body {
     margin-bottom: 70px;
 }
 .slider-parameters {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0;
-    padding: 0;
-    list-style-type: none;
+    row-gap: 20px;
 }
 .slider-parameters-terms {
+    grid-row: 2/3;
     font-size: 16px;
     line-height: 30px;
     color: #444444;
 }
-.slider-parameters-item:not(:last-of-type) {
-    margin-right: 20px;
-}
 .slider-parameters-discription {
-    display: block;
     margin: 0;
-    margin-bottom: 20px;
     font-size: 36px;
     line-height: 30px;
     color: #000000;
@@ -228,6 +223,9 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.product {
+    margin-bottom: 169px;
 }
 .product-list {
     display: flex;
@@ -240,7 +238,6 @@ body {
 }
 .product-item {
     width: 160px;
-    height: 254px;
 }
 .product-link {
     font-family: raleway, sans-serif;
@@ -260,17 +257,20 @@ body {
 }
 .service {
     width: 100%;
-    margin: 0;
     margin-bottom: 90px;
-    padding: 0;
+    padding-bottom: 139px;
     background-color: #F0F0F0;
 }
 .slider-service {
     display: flex;
-    justify-content: start;
     width: 1160px;
     margin: 0 auto;
+}
+.slider-service-list {
+    margin: 0;
+    margin-top: -20px;
     padding: 0;
+    list-style-type: none;
 }
 .service-item {
     display: flex;
@@ -280,9 +280,8 @@ body {
 }
 .service-title {
     width: 560px;
-    height: 70px;
     margin: 0;
-    padding: 0;
+    margin-bottom: 32px;
     font-family: raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
@@ -290,21 +289,11 @@ body {
 }
 .servive-discription {
     width: 500px;
-    height: 165px;
     margin: 0;
-    margin-bottom: 69px;
-    padding: 0;
     color: #444444;
-}
-.slider-service-list {
-    margin: 0;
-    margin-top: -20px;
-    padding: 0;
-    list-style-type: none;
 }
 .button-service-current {
     width: 280px;
-    height: 40px;
     text-align: start;
     padding-left: 18px;
     color: #FFE17F;
@@ -312,8 +301,12 @@ body {
 }
 .button-service {
     width: 160px;
-    height: 20px;
     text-align: center;
+    padding: 0;
+    border: none;
+}
+.slider-service-item {
+    line-height: 21px;
 }
 .slider-service-item:not(:last-of-type) {
     margin-bottom: 45px;
@@ -323,10 +316,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 1160px;
-    height: 100px;
-    margin: 0;
     margin-bottom: 97px;
     padding: 0;
+    padding: 38px 0;
     background-color: #F0F0F0;
 }
 .delivery-discription {
@@ -568,6 +560,12 @@ body {
     margin-right: 0;
 }
 .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 .catalog-header {
@@ -713,24 +711,41 @@ body {
     box-sizing: border-box;
 }
 .product-card-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
     margin: 0;
-    padding-left: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 44px;
+    padding: 0;
+    gap: 40px;
     list-style-type: none;
 }
-.product-card-link {
+.product-card-item {
+    display: grid;
+    grid-template-rows: 380px auto min-content;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+.product-card-image-link {
+    grid-column: 1 / -1;
+}
+.product-card-title-link {
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.02em;
     text-decoration: none;
     color: #000000;
 }
+.product-card-title {
+    margin: 0;
+}
 .product-card-text {
     line-height: 21px;
     text-align: right;
     color: #444444;
+}
+.button-more-product {
+    grid-column: 1 / -1;
 }
 .load-more {
     width: 760px;
@@ -750,11 +765,17 @@ body {
     display: flex;
     height: 55px;
     margin: 0 auto 77px;
-    padding-left: 0;
+    padding: 0 30px;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
     background-color: #EBEBEB;
+}
+.pagination-item:nth-child(2) {
+    margin-left: auto;
+}
+.pagination-item:nth-child(6) {
+    margin-right: auto;
 }
 .pagination-link {
     font-size: 16px;
